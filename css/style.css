@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font: 17px;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-size: 95px;
+}
+h2{
+    font-size: 50px;
+    
+}
+h3{
+    font-size: 35px;
+   
 }
 .container{
     width: 90%;
     margin: auto;
+}
+section{
+    padding: 50px 0 50px 0;
 }
 header{
     background-image: url(../images/dawn.jpg);
@@ -17,12 +41,18 @@ header{
     background-color: #0000007d;
 }
 nav{
-    position: fixed;
+    
     left: 0;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 nav h4{
     color: white;
@@ -35,6 +65,8 @@ nav ul{
     padding: 0;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 nav ul li{
@@ -54,7 +86,7 @@ nav ul li a{
     color: white;
 }
 .banner h3{
-    font-size: 30px;
+    
     font-style: italic;
     margin: 0 0 10px 0;
 }
@@ -66,7 +98,7 @@ nav ul li a{
     border-radius: 5px;
 }
 .banner h1{
-    font-size: 70px;
+    
 }
 .banner button{
     background-color: #d14343;
@@ -76,6 +108,8 @@ nav ul li a{
     letter-spacing: 2px;
     border: 1px solid #d14343;
     border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .banner button:hover{
@@ -83,3 +117,195 @@ nav ul li a{
     letter-spacing: 3px;
 
 }
+/* ====Upcoming Events====== */
+.event-main{
+    text-align: center;
+}
+.event-main h2{
+    margin: 0;
+    
+}
+.event-main span{
+    background-color: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0 50px 0;
+}
+.event{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.event-box{
+    width: 50%;
+    margin: 20px;
+}
+.event-box img{
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 16px 16px 2px #8080807d;
+            box-shadow: 16px 16px 2px #8080807d;
+}
+
+.event-box h4{
+    font-size: 25px;
+    margin: 25px 0 20px 0;
+}
+.event-box p{}
+.event-box a{
+    color: red;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+/* ====EXPLORE THE WORLD===== */
+.explore-section{
+    background-image: url(../images/father.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+    background-attachment: fixed;
+}
+
+.explore-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.explore{
+    width: 50%;
+    
+}
+.explore h1{
+    margin-bottom:0 ;
+}
+.explore span{
+    background-color: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0 50px 0;
+}
+.explore p{}
+.explore a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* ====TOURS & DESTINATION==== */
+.tours-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.tour{
+    padding: 15px;
+}
+.tour span{
+    background-color: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0 50px 0;
+}
+.tour h3{
+    margin: 0;
+}
+.tour p{
+    margin:30px 0;
+}
+.tour a{}
+.tour img{}
+.small{
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0 20px 0;
+}
+.large{
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0 20px 0;
+}
+/* ===Footer==== */
+footer{
+    background-color: black;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+.fab{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+/* ==========About Us========== */
+.about-section,
+.team-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2,
+.team-section h2 {
+    color: #333;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-top: 10px;
+}
+/* ===========Scroll Bar Design============= */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e8eceb;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  /* ===========Scroll Bar Ends============= */
+  
